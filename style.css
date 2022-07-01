@@ -1,0 +1,157 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #fff;
+    font-size: 14px;
+    font-family: "Inter",sans-serif;
+    padding: 1rem;
+
+}
+.navbar{
+    overflow: hidden;
+    background-color: white;
+    transition: 0.4s; /*Adds a transition effect when the padding is decreased*/
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+    border-bottom: 8px solid #D3406C;
+    
+}
+
+
+.Cart_Item{
+    display: flex;
+  justify-content: space-evenly;
+  margin: 2 rem auto;
+  gap: 4 rem;
+  border-radius: 12px;
+  float:right; 
+  right:-100px;
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  background-color:white;
+  width:150px;
+  height:1000px;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+
+   }
+   .navStyle{
+    display: flex;
+    padding-left: 520px;
+
+   }
+
+   button{
+       background-color: #fff;
+       width:150px;
+       height:40px
+   }
+   
+   .row{
+       flex-direction: row;  
+       /* padding-left: 0px;   */
+   }
+
+   .menu li button{
+    background-color: #fff;
+    border-radius: 5px;
+   }
+
+   .menu li {
+    padding: 0px 14px 10px;
+    font-size: 14px;
+   }
+
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    list-style: none;
+   }
+
+   .out_nav {
+       padding-top: 180px;
+    display: flex;
+    gap: 1em;
+    font-size: 15px;
+    list-style: none;
+    
+   }
+   .middle{
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+   }
+
+
+   .Categories{
+    width: 300px;
+    height: 330px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    border:1px solid #ccc;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+    list-style-type: circle;
+    /* padding-bottom: 50px; */
+   }
+   .Categories li{
+       padding-bottom: 10px;
+   }
+   .bottom ,.Gap{
+    display: flex;
+    gap: 1em;
+    font-size: 14px;
+    list-style: none;
+  justify-content: space-evenly;
+  width: 100%;
+  margin:1 rem auto;
+  padding:1rem;
+  background-color: #E9E9E9;
+  border-bottom: 1px solid black;
+   }
+   .Gap li{
+    padding-bottom: 10px;
+    /* word-wrap: break-word; */
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 20px;
+   }
+
+   .row p{
+    align-items: center;
+   }
+
+ 
+
+   .mb-2{
+    margin-bottom: 0.5rem;
+   }
+
+   .color{
+    color: #c7417b;
+
+   }
+   
+   .Gap{
+
+    width: 100%;
+    justify-content: space-evenly;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+   }
+
+   .Preview_Page{
+       text-align: center;
+       margin-bottom: 1rem;
+   }
+
+  
+
+
+  
