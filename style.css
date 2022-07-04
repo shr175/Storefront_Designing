@@ -26,20 +26,31 @@ body{
 .Cart_Item{
     display: flex;
   justify-content: space-evenly;
-  margin: 2 rem auto;
-  gap: 4 rem;
-  border-radius: 12px;
+
+
+  border-radius: 10px;
   float:right; 
   right:-100px;
   display: grid;
-  /* grid-template-columns: auto auto auto; */
   background-color:white;
+
   width:150px;
   height:1000px;
+
+    flex-wrap: wrap;
+
+padding-top: 25px;
+    position: relative;
+    width: 100%;
+
+
   grid-template-columns: repeat(4, 6rem);
-  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+
+
 
    }
+
+  
    .navStyle{
     display: flex;
     padding-left: 520px;
@@ -54,7 +65,9 @@ body{
    
    .row{
        flex-direction: row;  
-       /* padding-left: 0px;   */
+
+       flex: 0 0 25%;
+       max-width: 25%;
    }
 
    .menu li button{
@@ -87,20 +100,40 @@ body{
     padding-bottom: 15px;
    }
 
+   .middle_container{
+    /* border: 3px solid #fff;
+    padding: 20px;
+    margin-right: 20px;*/
+    display: grid; 
+
+    /* display: flex; */
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+   }
 
    .Categories{
-    width: 300px;
+    width: 250px;
     height: 330px;
     overflow-y: scroll;
     scrollbar-width: thin;
-    border:1px solid #ccc;
+    /* border:1px solid #ccc; */
     font:16px/26px Georgia, Garamond, Serif;
     overflow:auto;
     list-style-type: circle;
-    /* padding-bottom: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    -webkit-font-smoothing: antialiased;
+
    }
    .Categories li{
        padding-bottom: 10px;
+   }
+   .side_category{
+    border-right: 1px solid #f3f3f4;
+    border-top: 1px solid #f3f3f4;
    }
    .bottom ,.Gap{
     display: flex;
@@ -114,6 +147,7 @@ body{
   background-color: #E9E9E9;
   border-bottom: 1px solid black;
    }
+
    .Gap li{
     padding-bottom: 10px;
     /* word-wrap: break-word; */
@@ -124,7 +158,13 @@ body{
    }
 
    .row p{
-    align-items: center;
+
+
+     display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
    }
 
  
