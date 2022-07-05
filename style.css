@@ -23,22 +23,35 @@ body{
 }
 
 
-.Cart_Item{
-    display: flex;
-  justify-content: space-evenly;
-  border-radius: 10px;
-  float:right;
-  display: grid;
-  background-color:white;
-  width:100px;
-  height:1000px;
-    flex-wrap: wrap;
-padding-top: 25px;
-    position: relative;
-    width: 100%;
+ .Cart_Item{
+  
+  border-radius: 5px;
+  height:80px;
  grid-template-columns: repeat(4, 6rem);
+ /* padding-top: 25px; */
+ padding-left: 25px;
+ padding-bottom: 65px;
+ justify-content: space-evenly;
+ position: relative;
+ display: grid;
+ flex-wrap: wrap;
 
-   }
+
+   } 
+
+
+
+    .row{
+        flex-direction: row;  
+        flex: 0 0 25%;
+        max-width: 25%;
+
+  }
+ 
+
+  .row p{
+    white-space: nowrap;
+  }
 
   
    .navStyle{
@@ -50,17 +63,10 @@ padding-top: 25px;
 
    button{
        background-color: #fff;
-
        width:150px;
        height:40px
    }
    
-   .row{
-       flex-direction: row;  
-
-       flex: 0 0 25%;
-       max-width: 25%;
-   }
 
    .menu li button{
     background-color: #fff;
@@ -94,42 +100,46 @@ padding-top: 25px;
    
 
    .middle_container{
-    margin: 1rem;
-    padding: 2rem 2rem;
-    display: grid; 
+    display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    /* border-right: 1px solid #f3f3f4; */
     
    }
 
    .Categories{
-    width: 250px;
+    width: 350px;
     height: 330px;
     overflow-y: scroll;
     scrollbar-width: thin;
     font:16px/26px Georgia, Garamond, Serif;
-    border:1px solid grey;
+    /* border:1px solid grey; */
     overflow:auto;
     list-style-type: circle;
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
+    
     margin-left: -15px;
     -webkit-font-smoothing: antialiased;
 
    }
    .Categories li{
+
        padding-bottom: 10px;
+       padding-left: 100px;
    }
    .side_category{
-    border-right: 1px solid #f3f3f4;
-    
+       /* padding-top:20px; */
+       /* border-collapse: separate; */
+    /* border-top: 1px solid #f3f3f4; */
+    /* border-right: 1px solid #f3f3f4; */
     border-top: 1px solid #f3f3f4;
    }
    .bottom ,.Gap{
     display: flex;
-    /* gap: 1em; */
+
     font-size: 14px;
     list-style: none;
   justify-content: space-evenly;
@@ -137,7 +147,7 @@ padding-top: 25px;
   margin:1 rem auto;
   padding:1rem;
       background-color: #f6f8fa;
-  /* border-color:1px solid #f3f3f4; */
+
   border-bottom: 1px solid #f3f3f4;
    }
 
@@ -145,13 +155,10 @@ padding-top: 25px;
     color: #6a737d;
    }
 
-   /* .button li{
-    border-color:1px solid #f3f3f4;
-   } */
+ 
 
    .Gap li{
     padding-bottom: 10px;
-    /* word-wrap: break-word; */
     overflow: hidden; 
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -182,7 +189,7 @@ padding-top: 25px;
    }
 
    .Customer li{
-         /* color: #6a737; */
+
          color: #6a737d;
    }
   .Gap h3{
@@ -194,7 +201,7 @@ padding-top: 25px;
 
   .Gap li{
     padding-bottom: 10px;
-    /* word-wrap: break-word; */
+
     overflow: hidden;
     text-overflow: ellipsis;
     color: #6a737d;
